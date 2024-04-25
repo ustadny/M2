@@ -1,0 +1,25 @@
+I am trying to build from scratch on Redhat Enterprise 8.
+
+After configure was successful, the make gave the following error
+
+checking that generated files are newer than configure... done
+configure: creating ./config.status
+config.status: creating Makefile
+gawk: symbol lookup error: /root/M2/M2/usr-host/lib/libreadline.so.8: undefined symbol: UP
+config.status: error: could not create Makefile
+make[2]: *** [../Makefile.library:181: .configured-4.2.1] Error 1
+make[2]: Leaving directory '/root/M2/M2/libraries/factory'
+make[1]: *** [Makefile:7: all-in-factory] Error 2
+make[1]: Leaving directory '/root/M2/M2/libraries'
+make: *** [GNUmakefile:251: all-in-libraries] Error 2
+
+
+
+I read somewhere that libreadline needs libtinfo for the undefined symbol UP.
+How do I fix the configure?
+
+Thanks
+
+Charanjit Jutla
+IBM Research
+
